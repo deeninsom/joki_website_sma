@@ -1,0 +1,38 @@
+/* LoginPage.css */
+.login-page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(#5E9EFF, #5E9EFF, #fff, #5E9EFF);
+  /* height: 100vh;  */
+}
+
+.content-login {
+  width: 100%;
+  background: linear-gradient(#5E9EFF, #5E9EFF, #fff, #5E9EFF);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content-login .text-thumbnail p {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #FFFB98;
+}
+
+.content-login .form-login {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.content-login .card {
+  width: 401px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #08073A;
+  margin-top: 30px;
+}
+
+
