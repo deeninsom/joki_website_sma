@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import LoginPage from "./ui/pages/LoginPage"
 import Layout from "./ui/components/Layout"
-import { PanelWaliKelasRoute, PanelWaliRoute } from "./routing"
+import { PanelAdmins, PanelWaliKelasRoute, PanelWaliRoute } from "./routing"
 
 const App = () => {
   return (
@@ -12,6 +12,7 @@ const App = () => {
             <Route path="/" element={<LoginPage />} />
             <Route path="/panel-wali/*" element={<PanelWaliRoute />} />
             <Route path="/panel-wali-kelas/*" element={<PanelWaliKelasRoute />} />
+            <Route path="/panel-admin/*" element={<PanelAdmins/>} />
           </Routes>
         </BrowserRouter>
       </Layout>

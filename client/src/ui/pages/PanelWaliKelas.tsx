@@ -457,8 +457,9 @@ export const ViewKritik = () => {
         <div className="group-content" style={{ backgroundColor: "#FFFB98FC", display: "flex", borderRadius: "10px", padding: "20px", marginTop: "10px", fontWeight: "bold" }}>
           KRITIK & SARAN MASUK
         </div>
+
         <div className="detail-form-kritik" style={{ marginTop: "20px" }}>
-          <table style={{ backgroundColor: "#FFFB98FC", width: "100%" }}>
+          <table style={{ backgroundColor: "#FFFB98FC", width: "100%", borderRadius: "10px" }}>
             <thead>
               <tr style={{ textAlign: "center" }}>
                 <th style={{ padding: "6px" }}>NO</th>
@@ -470,7 +471,19 @@ export const ViewKritik = () => {
                 <th style={{ padding: "6px" }}>STATUS</th>
               </tr>
             </thead>
-            
+            <tbody>
+              <tr style={{ textAlign: "center" }}>
+                <td style={{ padding: "6px" }}>1</td>
+                <td style={{ padding: "6px" }}>$100</td>
+                <td style={{ padding: "6px" }}>$100</td>
+                <td style={{ padding: "6px" }}>$100</td>
+                <td style={{ padding: "6px" }}>$100</td>
+                <td style={{ padding: "6px" }}>
+                  <i className="fa fa-solid fa-pen-to-square" style={{ cursor: "pointer" }} onClick={() => handlePage('/panel-wali-kelas/tanggapan-kritik')}></i>
+                </td>
+                <td style={{ padding: "6px" }}>$100</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </section>
@@ -541,66 +554,72 @@ export const EntriKritik = () => {
 }
 
 
-export const BalasanTanggapan = () => {
+export const DataSiswa = () => {
   return (
     <DashboardLayout>
       <section>
         <div className="group-content" style={{ backgroundColor: "#FFFB98FC", display: "flex", borderRadius: "10px", padding: "20px", marginTop: "10px", fontWeight: "bold" }}>
-          BALASAN KRITIK & SARAN
+          DATA SISWA
         </div>
         <div className="detail-form-kritik" style={{ marginTop: "20px" }}>
           <ul style={{ listStyle: "none" }}>
             <li style={{ color: "#FFFB98FC", display: "flex", alignItems: "center" }}>
-              <div style={{ fontWeight: "bold", width: "13%" }}>Tanggal</div>
+              <div style={{ fontWeight: "bold", width: "16%" }}>ID KELAS</div>
               <div>:</div>
-              <div className='d-flex' style={{ fontWeight: "bold", marginLeft: "10px" }}>
-                <button className='gap-2' style={{ backgroundColor: "#FFFB98FC", fontWeight: "bold", borderRadius: "10px", paddingLeft: "10px", paddingRight: "10px", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center" }}>dd <i className="fa fa-solid fa-chevron-down" style={{ fontSize: "12px" }}></i></button>
-                <button className='gap-2' style={{ backgroundColor: "#FFFB98FC", fontWeight: "bold", borderRadius: "10px", paddingLeft: "10px", paddingRight: "10px", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center" }}>mm <i className="fa fa-solid fa-chevron-down" style={{ fontSize: "12px" }}></i></button>
-                <button className='gap-2' style={{ backgroundColor: "#FFFB98FC", fontWeight: "bold", borderRadius: "10px", paddingLeft: "10px", paddingRight: "10px", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center" }}>yyyy <i className="fa fa-solid fa-chevron-down" style={{ fontSize: "12px" }}></i></button>
+              <div className="group-content ms-2" style={{ backgroundColor: "#FFFB98FC", display: "flex", borderRadius: "10px", marginTop: "10px", fontWeight: "bold" }}>
+                <textarea id="w3review" name="w3review" rows={2} cols={50} style={{ width: "100%", backgroundColor: "#FFFB98FC", borderRadius: "10px", border: "none", height: "40px" }}>
+                </textarea>
               </div>
             </li>
             <li style={{ color: "#FFFB98FC", display: "flex", alignItems: "center" }}>
-              <div style={{ fontWeight: "bold", width: "13%" }}>Judul</div>
+              <div style={{ fontWeight: "bold", width: "16%" }}>TAHUN PELAJARAN</div>
               <div>:</div>
-              <div className="group-content ms-2" style={{ backgroundColor: "#FFFB98FC", display: "flex", borderRadius: "10px", padding: "20px", marginTop: "10px", fontWeight: "bold" }}>
-                <textarea id="w3review" name="w3review" rows={2} cols={50} style={{ width: "100%", backgroundColor: "#FFFB98FC", border: "none" }}>
+              <div className="group-content ms-2" style={{ backgroundColor: "#FFFB98FC", display: "flex", borderRadius: "10px", marginTop: "10px", fontWeight: "bold" }}>
+                <textarea id="w3review" name="w3review" rows={2} cols={50} style={{ width: "100%", backgroundColor: "#FFFB98FC", borderRadius: "10px", border: "none", height: "40px" }}>
                 </textarea>
               </div>
             </li>
-            <li>
-              <li style={{ color: "#FFFB98FC", display: "flex", alignItems: "center" }}>
-                <div style={{ fontWeight: "bold", width: "18%", marginTop: "10px" }}>KRITIK & SARAN</div>
-                <div style={{ marginTop: "10px" }}>:</div>
-              </li>
-              <div className="group-content" style={{ backgroundColor: "#FFFB98FC", display: "flex", borderRadius: "10px", padding: "20px", marginTop: "10px", fontWeight: "bold" }}>
-                <textarea id="w3review" name="w3review" rows={4} cols={50} style={{ width: "100%", backgroundColor: "#FFFB98FC", border: "none", height: "100px" }}>
+            <li style={{ color: "#FFFB98FC", display: "flex", alignItems: "center" }}>
+              <div style={{ fontWeight: "bold", width: "16%" }}>SEMESTER</div>
+              <div>:</div>
+              <div className="group-content ms-2" style={{ backgroundColor: "#FFFB98FC", display: "flex", borderRadius: "10px", marginTop: "10px", fontWeight: "bold" }}>
+                <textarea id="w3review" name="w3review" rows={2} cols={50} style={{ width: "100%", backgroundColor: "#FFFB98FC", borderRadius: "10px", border: "none", height: "40px" }}>
                 </textarea>
               </div>
-            </li>
-            <li>
-              <li style={{ color: "#FFFB98FC", display: "flex", alignItems: "center" }}>
-                <div style={{ fontWeight: "bold", width: "18%", marginTop: "10px" }}>TANGGAPAN</div>
-                <div style={{ marginTop: "10px" }}>:</div>
-              </li>
-              <div className="group-content" style={{ backgroundColor: "#FFFB98FC", display: "flex", borderRadius: "10px", padding: "20px", marginTop: "10px", fontWeight: "bold" }}>
-                <textarea id="w3review" name="w3review" rows={4} cols={50} style={{ width: "100%", backgroundColor: "#FFFB98FC", border: "none", height: "100px" }}>
-                </textarea>
-              </div>
-            </li>
-            <li>
-              <li style={{ color: "#FFFB98FC", display: "flex", alignItems: "center" }}>
-                <div style={{ fontWeight: "bold", width: "18%", marginTop: "10px" }}>BALAS TANGGAPAN</div>
-                <div style={{ marginTop: "10px" }}>:</div>
-              </li>
-              <div className="group-content" style={{ backgroundColor: "#FFFB98FC", display: "flex", borderRadius: "10px", padding: "20px", marginTop: "10px", fontWeight: "bold" }}>
-                <textarea id="w3review" name="w3review" rows={4} cols={50} style={{ width: "100%", backgroundColor: "#FFFB98FC", border: "none", height: "100px" }}>
-                </textarea>
-              </div>
-            </li>
-            <li className='gap-3' style={{ display: "flex", justifyContent: "end", marginRight: "20px", marginTop: "10px" }}>
-              <button style={{ backgroundColor: "#5E9EFF", paddingLeft: "20px", paddingRight: "20px", fontWeight: "bold", border: "none", borderRadius: " 10px" }}>SUBMIT</button>
             </li>
           </ul>
+        </div>
+        <div className="search d-flex justify-content-end">
+          <input type="text" name="search" style={{ backgroundColor: "#FFFB98FC", border: "none", borderRadius: "10px", fontSize: "15px", padding: "4px" }} placeholder='Search'>
+          </input>
+        </div>
+        <div className="detail-form-siswa" style={{ marginTop: "20px" }}>
+          <table style={{ backgroundColor: "#FFFB98FC", width: "100%", borderRadius: "10px" }}>
+            <thead>
+              <tr style={{ textAlign: "center" }}>
+                <th style={{ padding: "6px" }}>NO</th>
+                <th style={{ padding: "6px" }}>NIS</th>
+                <th style={{ padding: "6px" }}>NAMA</th>
+                <th style={{ padding: "6px" }}>TGL LAHIR</th>
+                <th style={{ padding: "6px" }}>JENIS KELAMIN</th>
+                <th style={{ padding: "6px" }}>AGAMA</th>
+                <th style={{ padding: "6px" }}>NAMA ORANG TUA</th>
+                <th style={{ padding: "6px" }}>NO. TELP ORANG TUA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style={{ textAlign: "center" }}>
+                <td style={{ padding: "6px" }}>1</td>
+                <td style={{ padding: "6px" }}>$100</td>
+                <td style={{ padding: "6px" }}>$100</td>
+                <td style={{ padding: "6px" }}>$100</td>
+                <td style={{ padding: "6px" }}>$100</td>
+                <td style={{ padding: "6px" }}>$100</td>
+                <td style={{ padding: "6px" }}>$100</td>
+                <td style={{ padding: "6px" }}>$100</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </section>
     </DashboardLayout>
